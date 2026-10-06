@@ -22,4 +22,8 @@ ssh -T git@github.com
 Hi Groggory/practicum_yandex! You've successfully authenticated, but GitHub does not provide shell access.
 
 git remote add origin git@github.com:ваш_логин/имя_репозитория.git
+
 git remote add origin git@github.com:Groggory/practicum_yandex.git
+
+Groggory
+practicum_yandex
