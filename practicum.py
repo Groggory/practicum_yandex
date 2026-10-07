@@ -1,29 +1,19 @@
-git config --global user.name "Groggory"
-git config --global user.email "kruglov.grogory.praktica@gmail.com"
+caunter = True
+while caunter:
+    print('Добрый День,Я Ваш персональный помошник давайте познакомимся.=3')
+    name_user = input('Как я могу к Вам обращаться?')
+    print('Очень приятно,',name_user)
+    age_user = int(input('Сколько Вам лет?'))
+    growth_user_centi = int(input('Какой Ваш рост?'))
+    growth_user_meter =float(growth_user_centi / 100)
+    weight_user =float(input('Сколько килграммов Ваш вес на данный момоент?:'))
+    caunter = False
 
 
-https://github.com/Groggory/practicum_yandex
+bmi = weight_user/ (growth_user_meter ** 2) # Индекс массы тела
 
-git remote add origin https://github.com/ваш_логин/имя_репозитория.git
+print(round(bmi,1))
 
-git remote add origin https://github.com/Groggory/practicum_yandex.git
-
-
-ssh-keygen -t ed25519 -C "kruglov.grogory.praktica@gmail.com"
-(/c/Users/user/.ssh/id_ed25519): 
-
-debug1: Offering public key: /c/Users/user/.ssh/id_ed25519 ED25519 SHA256:Lz0NrjEwOl5XrDVCCCQmHE46x+d2aTwI6l0LaSjufH8
-
-
-cat ~/.ssh/id_ed25519.pub
-
-
-ssh -T git@github.com
-Hi Groggory/practicum_yandex! You've successfully authenticated, but GitHub does not provide shell access.
-
-git remote add origin git@github.com:ваш_логин/имя_репозитория.git
-
-git remote add origin git@github.com:Groggory/practicum_yandex.git
-
-Groggory
-practicum_yandex
+water_ml = weight_user * 30 #Рассчитать норму воды в миллилитрах
+water_l = water_ml / 1000
+print(water_l)
