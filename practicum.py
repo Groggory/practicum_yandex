@@ -3,7 +3,10 @@ days_water = 30
 
 while True:
     print('***' * 50)
-    print('Добрый день! Я ваш персональный помощник, давайте познакомимся. =3', end='\n\n')
+    print(
+        'Добрый день! Я ваш персональный помощник, давайте познакомимся. =3',
+        end='\n\n'
+    )
     print('***' * 50)
 
     name_user = input('Как я могу к вам обращаться? ')
@@ -21,7 +24,10 @@ while True:
 
         growth_user_meter = float(growth_user_centi) / 100
 
-        weight_user = round(float(input('Сколько килограммов ваш вес на данный момент? ')), 1)
+        weight_user = round(
+            float(input('Сколько килограммов ваш вес на данный момент? ')),
+            1
+        )
         if weight_user <= 10:
             raise ValueError('Вес должен быть не менее 10 кг.')
 
