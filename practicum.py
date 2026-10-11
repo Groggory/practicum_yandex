@@ -63,6 +63,5 @@ elif bmi < 30:
     category = 'избыточный вес'
 else:
     category = 'ожирение'
-print("что то новое")
 print(f'Категория: {category}')
 print('Спасибо! Хорошего дня! =3')
