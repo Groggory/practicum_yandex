@@ -65,3 +65,4 @@ else:
     category = 'ожирение'
 print(f'Категория: {category}')
 print('Спасибо! Хорошего дня! =3')
+
