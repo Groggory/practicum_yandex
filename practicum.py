@@ -15,10 +15,10 @@ while True:
     try:
         age_user = int(input('Сколько вам лет? '))
         if age_user < 0 or age_user > 120:
-            print('Пожалуйста, укажите возраст от 0 до 120 лет.')
+            print('Пожалуйста, укажите возраст.')
             continue
 
-        growth_user_centi = int(input('Какой ваш рост в см.? '))
+        growth_user_centi = int(input('Какой ваш рост в см.?'))
         if growth_user_centi <= 70:
             raise ValueError('Рост должен быть не менее 70 см.')
 
